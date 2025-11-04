@@ -7,4 +7,27 @@ apt-get update -y
 
 # Install GNOME Desktop
 apt-get install -y \
-  task-gnome-desktop
+  gnome-core \
+  ptyxis
+
+# Remove unwanted bits of GNOME Core
+apt purge -y \
+  evolution \
+  firefox-esr \
+  gnome-calculator \
+  gnome-calendar \
+  gnome-characters \
+  gnome-clocks \
+  gnome-connections \
+  gnome-contacts \
+  gnome-font-viewer \
+  gnome-maps \
+  gnome-software \
+  gnome-system-monitor \
+  gnome-text-editor \
+  gnome-weather \
+  papers \
+  totem \
+  yelp
+
+apt autoremove -y --purge

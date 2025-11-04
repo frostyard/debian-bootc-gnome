@@ -9,3 +9,23 @@ apt-get update -y
 apt-get install -y \
   gnome-core \
   ptyxis
+
+# Remove unwanted bits of GNOME Core
+apt purge -y \
+  gnome-calculator \
+  gnome-calendar \
+  gnome-characters \
+  gnome-clocks \
+  gnome-connections \
+  gnome-contacts \
+  gnome-font-viewer \
+  gnome-maps \
+  gnome-software \
+  gnome-system-monitor \
+  gnome-text-editor \
+  gnome-weather \
+  papers \
+  totem \
+  yelp
+
+apt autoremove -y --purge

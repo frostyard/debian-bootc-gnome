@@ -33,6 +33,7 @@ apt purge -y \
   gnome-system-monitor \
   gnome-text-editor \
   gnome-weather \
+  loupe \
   papers \
   totem \
   yelp

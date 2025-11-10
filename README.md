@@ -1,2 +1,2 @@
 # debian-bootc-gnome
-Standard GNOME desktop built upon linuxsnow/debian-bootc-core
+Standard GNOME desktop built upon frostyard/debian-bootc-core

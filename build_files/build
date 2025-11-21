@@ -62,6 +62,9 @@ apt-get install -y \
 	pipewire \
 	dbus-broker
 
+mkdir -p /usr/share/snow
+apt list --installed > /usr/share/snow/desktop-packages.txt
+
 # Remove unwanted bits of GNOME Core
 apt purge -y \
 	evolution \
@@ -83,6 +86,8 @@ apt purge -y \
 	papers \
 	totem \
 	yelp
+
+apt list --installed > /usr/share/snow/desktop-packages.after-cleanup.txt
 
 # Build Initramfs
 KERNEL_VERSION="$(basename "$(find /usr/lib/modules -maxdepth 1 -type d | grep -v -E "*.img" | tail -n 1)")"

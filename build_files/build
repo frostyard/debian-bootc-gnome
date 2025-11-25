@@ -91,7 +91,7 @@ apt purge -y \
 	loupe \
 	papers \
 	totem \
-	yelp 
+	yelp
 
 apt list --installed > /usr/share/snow/desktop-packages.txt
 
